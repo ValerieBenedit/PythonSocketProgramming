@@ -3,7 +3,7 @@ import sys
 import threading
 
 clients_lock = threading.Lock()
-clients = {}  # username -> {control, data, addr}
+clients = {}
 control_to_user = {}
 
 
