@@ -2,11 +2,11 @@ CNT4713 – Chat Project 1
 
 Group Members
 -------------
-Name: Valerie Daniela   ID: 
+Name: Valerie Daniela   ID: 6106442
 
 Name: Nicolas Cancino   ID: 6300609
 
-Name: Maiko Patiag      ID: 6539856
+Name: Maiko Patiag      ID: 6539756
 
 Files Submitted
 ---------------
