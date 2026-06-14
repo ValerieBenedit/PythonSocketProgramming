@@ -60,13 +60,20 @@ def client_thread(control_sock, address):
             if command == "connect":
                 print("Connection requested. Creating data socket", flush=True)
                 try:
-                    _, client_ip, client_port = command_line.split(" ", 2)
-                    client_port = int(client_port)
+                    # Clean up trailing spaces and split cleanly by any whitespace
+                    parts = command_line.strip().split()
+                    if len(parts) < 3:
+                        raise ValueError("Missing IP or Port parameters")
+                        
+                    client_ip = parts[1]
+                    client_port = int(parts[2])
+                    
                     data_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                     data_sock.connect((client_ip, client_port))
                     local_data_port = data_sock.getsockname()[1]
                     control_sock.sendall(make_response(200, str(local_data_port)))
-                except Exception:
+                except Exception as e:
+                    print(f"Error handling connect command: {e}", flush=True)
                     try:
                         control_sock.sendall(make_response(500))
                     except Exception:
