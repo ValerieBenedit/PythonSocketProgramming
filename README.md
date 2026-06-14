@@ -4,7 +4,7 @@ Group Members
 -------------
 Name: Valerie Daniela   ID: 
 
-Name: Nicolas Cancino   ID: 
+Name: Nicolas Cancino   ID: 6300609
 
 Name: Maiko Patiag      ID: 6539856
 
