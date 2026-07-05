@@ -16,7 +16,7 @@ README.txt  – This file (authored by Maiko)
 
 Video
 -----
-Link: 
+Link: https://youtu.be/ZvlI9VjsD3U
 
 Notes
 -----
