@@ -1,4 +1,4 @@
-CNT4713 – Chat Project 1
+CNT4713 – Chat Project 2
 
 Group Members
 -------------
@@ -16,7 +16,7 @@ README.txt  – This file (authored by Maiko)
 
 Video
 -----
-Link: https://youtu.be/Pf3MvJgOaSM 
+Link: 
 
 Notes
 -----
