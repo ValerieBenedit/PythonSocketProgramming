@@ -1,0 +1,30 @@
+a. What is one major difference between the protocol in this project when compared to the TLS protocol?
+-- 
+a. The TLS uses certificates to check the identity of the server which makes the client talks to the server, but on the
+other hand this protocol sends the servers public key in a clear way during the "connect" step without any proof that the server owns the key.
+
+
+b. What flaws can you identify in the "secure" protocol?
+-- 
+b. 
+- The keys are not verified so there isn't a way to tell the real key from a fake one.
+- No protection against replay, so if an old encrypted message can be captured and sent again.
+- If the server's key is ever stolen, all past messages could be decrypted.
+
+
+c. How could the "secure" server and client framework above be compromised?
+-- 
+c.
+- Record the traffic, then later steal the server's private key to decrypt teh recoreded traffic.
+- Messages do not have passwords or identities, so that people could login as their free usernmae with no problem.
+- A cyber attacker can resend a captured message, and the server will replay the process.
+
+
+d. How could you improve the framework? 
+-- 
+d.
+- Implement the server's key by utilizing a signed certificate to ensure that a fraudulent attempt is not accepted.
+- Require the client to demonstrate ownership of its key, which will prevent impersonation.
+- Incorporate a new session key for each connection, so that it ensures that the long-term key doesn't unveil previous messages.
+
+
