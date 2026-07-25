@@ -21,8 +21,7 @@ Requirements
 Notes
 -----
 - Everything from "login" onward is secured through encryption. The "connect" phase begins with an exchange of the data port and the server's public key, ensuruing both parties posses the necesssary keys.
-- All processes should be executed on the same machine or within the same local network without a firewall interference. Follwing the "connect" step, the server establishes a brief connection to the client's callback port to send the data port and its publi key.
-- Each message contains a SHA-256 hash that the recipient checks after decryption.
+- All processes should be executed on the same machine or within the same local network without a firewall interference.
 
 Video
 -----
